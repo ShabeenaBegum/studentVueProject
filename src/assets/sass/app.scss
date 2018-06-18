@@ -1,0 +1,43 @@
+@import "variables";
+@import "~bootstrap/scss/bootstrap";
+@import "common";
+
+body{
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin-bottom: 100px;
+  background: #f8f3f3;
+  font-family: Roboto,sans-serif !important;
+}
+h1,h2,h3,h4,h5,h6{
+  font-family: Playfair Display, sans-senrif, serif !important;
+}
+
+[v-cloak] { display:none; }
+
+.navbar-dark .navbar-nav .nav-link {
+  color: #fff;
+  font-weight: bold;
+}
+.navbar-dark .navbar-nav .show > .nav-link,
+.navbar-dark .navbar-nav .active > .nav-link,
+.navbar-dark .navbar-nav .nav-link.show,
+.navbar-dark .navbar-nav .nav-link.active{
+  border-bottom: 1px solid;
+}
+.font-medium{
+  font-size: 26px;
+}
+
+.referearn{
+  background: url('/static/images/referearn.png');background-size: cover;
+  height: auto;
+}
+.achievements, .certificate{
+  background: #e1faff;
+}
+.nav-link.text-black-50.active{
+  color: $primary !important;
+  border-bottom: 2px solid $primary;
+}
